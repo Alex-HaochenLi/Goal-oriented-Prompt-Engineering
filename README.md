@@ -1,6 +1,4 @@
 # Goal-oriented Prompt Engineering
-![GitHub last commit](https://img.shields.io/github/last-commit/saltudelft/ml4se)
-![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/mir-am/0d2ee0d88d518e1a916aef1f8c77a666/raw/ml4se-paper-no.json)
 
 This repository contains a curated list of datasets that are devoted to research 
 on Goal-oriented Prompt Engineering. Our list covers a wide range of applications, including Arithmetic Reasoning,
