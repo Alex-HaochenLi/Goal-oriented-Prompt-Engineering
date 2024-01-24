@@ -1,25 +1,72 @@
 # Goal-oriented Prompt Engineering
 
+Large Language Models (LLMs) have shown prominent performance in various downstream tasks in which prompt engineering plays a pivotal role in optimizing LLMs' performance. 
+This paper, not as an overview of current prompt engineering methods, aims to highlight the limitation of designing prompts while holding an anthropomorphic assumption that expects LLMs to think like humans. 
+From our review of 35 representative studies, we demonstrate that a goal-oriented prompt formulation, which guides LLMs to follow established human logical thinking, significantly improves the performance of LLMs. 
+Furthermore, We introduce a novel taxonomy that categorizes goal-oriented prompting methods into five interconnected stages and we demonstrate the broad applicability of our framework by summarizing ten applicable tasks. 
+With four future directions proposed, we hope to further emphasize and promote goal-oriented prompt engineering. 
+
 This repository contains a curated list of datasets that are devoted to research 
 on Goal-oriented Prompt Engineering. Our list covers a wide range of applications, including Arithmetic Reasoning,
 Commonsense Reasoning, Symbolic Reasoning, Logical Reasoning, Planning in Virtual/Real Environment, Multihop Question Answering,
-Knowledge-intensive Question Answering, Code Generation, Dialogue, and Recommendation.
-
+Open-domain Question Answering, Code Generation, Dialogue, and Recommendation.
 
 Please feel free to send a pull request to add papers and relevant content that are not listed here.
 
 ## Content
-- [Arithmetic Reasoning](#logical-reasoning)
-- [Commonsense Reasoning](#code-completion)
-- [Symbolic Reasoning](#code-generation)
-- [Logical Reasoning](#code-summarization)
-- [Planning](#code-embeddingsrepresentation)
-- [Multihop Question Answering](#code-changesediting)
-- [Knowledge-intensive Question Answering](#code-comments)
-- [Code Generation](#bugvulnerability-detection)
-- [Dialogue](#source-code-modeling)
-- [Recommendation](#program-repair)
-- [Misc](#misc)
+- [Papers](#papers)
+- [Tasks](#tasks)
+  - [Arithmetic Reasoning](#arithmetic-reasoning)
+  - [Commonsense Reasoning](#commonsense-reasoning)
+  - [Symbolic Reasoning](#symbolic-reasoning)
+  - [Logical Reasoning](#logical-reasoning)
+  - [Planning](#planning)
+  - [Multihop Question Answering](#multihop-question-answering)
+  - [Open-domain Question Answering](#open-domain-question-answering)
+  - [Code Generation](#code-generation)
+  - [Dialogue](#dialogue)
+  - [Recommendation](#recommendation)
+  - [Misc](#misc)
+
+## Papers
+
+- [CoT](https://arxiv.org/pdf/2201.11903.pdf) - Chain of thought prompting elicits reasoning in large language models
+- [Zero-shot Planner](https://arxiv.org/pdf/2201.07207.pdf) - Language models as zero-shot planners: Extracting actionable knowledge for embodied agents
+- [Self-consistency](https://arxiv.org/pdf/2203.11171.pdf)  - Self-consistency improves chain of thought reasoning in language models
+- [Least-to-most Prompting](https://arxiv.org/pdf/2205.10625.pdf)  - Least-to-most prompting enables complex reasoning in large language models
+- [Selection-Inference](https://arxiv.org/pdf/2205.09712.pdf)  - Selection-inference: Exploiting large language models for interpretable logical reasoning
+- [DecomP](https://arxiv.org/pdf/2210.02406.pdf)  - Decomposed prompting: A modular approach for solving complex tasks
+- [Self-ask](https://arxiv.org/pdf/2210.03350.pdf)  - Measuring and narrowing the compositionality gap in language models
+- [Zero-shot CoT](https://arxiv.org/pdf/2205.11916.pdf)  - Large Language Models are Zero-Shot Reasoners
+- [Program of Thoughts](https://arxiv.org/pdf/2211.12588.pdf)  - Program of thoughts prompting: Disentangling computation from reasoning for numerical reasoning tasks
+- [Successive Prompting](https://arxiv.org/pdf/2212.04902.pdf)  - Successive prompting for decomposing complex questions
+- [Self-refine](https://arxiv.org/pdf/2303.17651.pdf)  - Self-refine: Iterative refinement with self-feedback
+- [Reflexion](https://arxiv.org/pdf/2303.11366v4.pdf)  - Reflexion: an autonomous agent with dynamic memory and self-reflection
+- [MCR](https://arxiv.org/pdf/2304.13007.pdf)  - Answering questions by meta-reasoning over multiple chains of thought
+- [LLM+P](https://arxiv.org/pdf/2304.11477.pdf)  - Llm+p: Empowering large language models with optimal planning proficiency
+- [PEARL](https://arxiv.org/pdf/2305.14564v1.pdf)  - PEARL: Prompting Large Language Models to Plan and Execute Actions Over Long Documents
+- [Plan-and-solve](https://arxiv.org/pdf/2305.04091v3.pdf)  - Plan-and-solve prompting: Improving zero-shot chain-of-thought reasoning by large language models
+- [ToT](https://arxiv.org/pdf/2305.10601.pdf)  - Tree of thoughts: Deliberate problem solving with large language models
+- [Toolformer](https://arxiv.org/pdf/2302.04761.pdf)  - Toolformer: Language models can teach themselves to use tools
+- [MWP](https://arxiv.org/pdf/2306.00784.pdf)  - Interpretable Math Word Problem Solution Generation Via Step-by-step Planning
+- [ProCoT](https://arxiv.org/pdf/2305.13626.pdf)  - Prompting and Evaluating Large Language Models for Proactive Dialogues: Clarification, Target-guided, and Non-collaboration
+- [GDP-Zero](https://arxiv.org/pdf/2305.13660.pdf)  - Prompt-Based Monte-Carlo Tree Search for Goal-Oriented Dialogue Policy Planning
+- [Self-debug](https://arxiv.org/pdf/2304.05128.pdf)  - Teaching large language models to self-debug
+- [SayPlan](https://arxiv.org/pdf/2307.06135.pdf)  - Sayplan: Grounding large language models using 3d scene graphs for scalable task planning
+- [DEPS](https://arxiv.org/pdf/2302.01560.pdf)  - Describe, explain, plan and select: Interactive planning with large language models enables open-world multi-task agents
+- [GITM](https://arxiv.org/pdf/2305.17144.pdf)  - Ghost in the minecraft: Generally capable agents for open-world enviroments via large language models with text-based knowledge and memory
+- [Re-prompting](https://openreview.net/pdf?id=cMDMRBe1TKs)  - Planning with large language models via corrective re-prompting
+- [HuggingGPT](https://arxiv.org/pdf/2303.17580.pdf)  - HuggingGPT: Solving ai tasks with ChatGPT and its friends in huggingface
+- [Recmind](https://arxiv.org/pdf/2308.14296.pdf)  - Recmind: Large language model powered agent for recommendation
+- [GoT](https://arxiv.org/pdf/2308.09687.pdf)  - Graph of thoughts: Solving elaborate problems with large language models
+- [SALP](https://arxiv.org/pdf/2210.04964.pdf)  - Generating executable action plans with environmentally-aware language models
+- [RAP](https://arxiv.org/pdf/2305.14992.pdf) - Reasoning with language model is planning with world model
+- [SelfCheck](https://arxiv.org/pdf/2308.00436.pdf)  - SelfCheck: Using LLMs to zero-shot check their own step-by-step reasoning
+- [RLP](https://arxiv.org/pdf/2305.12647.pdf)  - Reflective linguistic programming (rlp): A stepping stone in socially-aware agi (socialagi)
+- [Inner Monologue](https://arxiv.org/pdf/2207.05608.pdf)  - Inner monologue: Embodied reasoning through planning with language models
+- [LLM-Planner](https://arxiv.org/pdf/2212.04088.pdf)  - LLM-Planner: Few-shot grounded planning for embodied agents with large language models
+
+## Tasks
 
 ### Arithmetic Reasoning
 
@@ -83,7 +130,7 @@ Please feel free to send a pull request to add papers and relevant content that 
 - [FEVER](https://arxiv.org/pdf/1803.05355v3.pdf) - FEVER: a large-scale dataset for Fact Extraction and VERification
 - [QuALITY QA](https://arxiv.org/pdf/2112.08608v2.pdf) - QuALITY: Question Answering with Long Input Texts, Yes!
 
-### Knowledge-intensive Question Answering
+### Open-domain Question Answering
 - [Web Questions](https://aclanthology.org/D13-1160.pdf) - Semantic Parsing on Freebase from Question-Answer Pairs
 - [Natural Questions](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/b8c26e4347adc3453c15d96a09e6f7f102293f71.pdf) - Natural Questions: a Benchmark for Question Answering Research
 - [TriviaQA](https://arxiv.org/pdf/1705.03551v2.pdf) - TriviaQA: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension
