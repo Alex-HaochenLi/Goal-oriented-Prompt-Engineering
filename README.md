@@ -1,10 +1,10 @@
 # Goal-oriented Prompt Engineering
 
-Large Language Models (LLMs) have shown prominent performance in various downstream tasks in which prompt engineering plays a pivotal role in optimizing LLMs' performance. 
-This paper, not as an overview of current prompt engineering methods, aims to highlight the limitation of designing prompts while holding an anthropomorphic assumption that expects LLMs to think like humans. 
-From our review of 35 representative studies, we demonstrate that a goal-oriented prompt formulation, which guides LLMs to follow established human logical thinking, significantly improves the performance of LLMs. 
-Furthermore, We introduce a novel taxonomy that categorizes goal-oriented prompting methods into five interconnected stages and we demonstrate the broad applicability of our framework by summarizing ten applicable tasks. 
-With four future directions proposed, we hope to further emphasize and promote goal-oriented prompt engineering. 
+Large Language Models (LLMs) have shown prominent performance in various downstream tasks and prompt engineering plays a pivotal role in optimizing LLMs' performance. 
+This paper, not only as an overview of current prompt engineering methods, but also aims to highlight the limitation of designing prompts based on an anthropomorphic assumption that expects LLMs to think like humans. 
+From our review of 36 representative studies, we demonstrate that a goal-oriented prompt formulation, which guides LLMs to follow established human logical thinking, significantly improves the performance of LLMs. 
+Furthermore, We introduce a novel taxonomy that categorizes goal-oriented prompting methods into five interconnected stages and we demonstrate the broad applicability of our framework. 
+With four future directions proposed, we hope to further emphasize the power and potential of goal-oriented prompt engineering in all fields.  
 
 This repository contains a curated list of datasets that are devoted to research 
 on Goal-oriented Prompt Engineering. Our list covers a wide range of applications, including Arithmetic Reasoning,
@@ -65,6 +65,7 @@ Please feel free to send a pull request to add papers and relevant content that 
 - [RLP](https://arxiv.org/pdf/2305.12647.pdf)  - Reflective linguistic programming (rlp): A stepping stone in socially-aware agi (socialagi)
 - [Inner Monologue](https://arxiv.org/pdf/2207.05608.pdf)  - Inner monologue: Embodied reasoning through planning with language models
 - [LLM-Planner](https://arxiv.org/pdf/2212.04088.pdf)  - LLM-Planner: Few-shot grounded planning for embodied agents with large language models
+- [INTERVENOR](https://arxiv.org/pdf/2311.09868.pdf)  - INTERVENOR: Prompting the Coding Ability of Large Language Models with the Interactive Chain of Repair
 
 ## Tasks
 
@@ -169,3 +170,13 @@ Please feel free to send a pull request to add papers and relevant content that 
 - [Keyword Counting](https://arxiv.org/pdf/2308.09687.pdf) - Graph of thoughts: Solving elaborate problems with large language models
 - [Document Merging](https://arxiv.org/pdf/2308.09687.pdf) - Graph of thoughts: Solving elaborate problems with large language models
 
+## Citation
+If you found this repository useful, please consider citing:
+```bibtex
+@article{li2024towards,
+  title={Towards Goal-oriented Prompt Engineering for Large Language Models: A Survey},
+  author={Li, Haochen and Leung, Jonathan and Shen, Zhiqi},
+  journal={arXiv preprint arXiv:2401.14043},
+  year={2024}
+}
+```
