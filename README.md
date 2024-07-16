@@ -105,7 +105,7 @@ Please feel free to send a pull request to add papers and relevant content that 
 - [K-th Letter Concatenation](https://arxiv.org/pdf/2210.02406.pdf) - Decomposed prompting: A modular approach for solving complex tasks
 
 ### Logical Reasoning
-- [bABI](https://arxiv.org/pdf/1502.05698)) - Towards ai-complete question answering: A set of prerequisite toy tasks
+- [bABI](https://arxiv.org/pdf/1502.05698) - Towards ai-complete question answering: A set of prerequisite toy tasks
 - [ProofWriter](https://arxiv.org/pdf/2012.13048v2.pdf) - ProofWriter: Generating Implications, Proofs, and Abductive Statements over Natural Language
 - [List Reversal](https://arxiv.org/pdf/2210.02406.pdf) - Decomposed prompting: A modular approach for solving complex tasks
 - [PrOntoQA](https://arxiv.org/pdf/2210.01240v4.pdf) - Language Models Are Greedy Reasoners: A Systematic Formal Analysis of Chain-of-Thought
@@ -169,14 +169,3 @@ Please feel free to send a pull request to add papers and relevant content that 
 - [Set Operations](https://arxiv.org/pdf/2308.09687.pdf) - Graph of thoughts: Solving elaborate problems with large language models
 - [Keyword Counting](https://arxiv.org/pdf/2308.09687.pdf) - Graph of thoughts: Solving elaborate problems with large language models
 - [Document Merging](https://arxiv.org/pdf/2308.09687.pdf) - Graph of thoughts: Solving elaborate problems with large language models
-
-## Citation
-If you found this repository useful, please consider citing:
-```bibtex
-@article{li2024towards,
-  title={Towards Goal-oriented Prompt Engineering for Large Language Models: A Survey},
-  author={Li, Haochen and Leung, Jonathan and Shen, Zhiqi},
-  journal={arXiv preprint arXiv:2401.14043},
-  year={2024}
-}
-```
