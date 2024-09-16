@@ -2,7 +2,7 @@
 
 ![Project Image](./Figures/overview.png)
 
-*Fig.1 An overview of the goal-oriented framework for prompting LLMs taking solving a math word problem as an example. (1) Decomposing **goal** into **sub-goal** sequences. (2) \textbf{Action} selection for attaining **sub-goals**. (3) Executing **actions** to get **sub-goal results**. (4) Evaluating **sub-goal results**. (5) Further selection of valuable **sub-goals**. Note that stages (2)(3)(4) are taken for all the decomposed sub-goals.*
+*Fig.1 An overview of the goal-oriented framework for prompting LLMs taking solving a math word problem as an example. (1) Decomposing **goal** into **sub-goal** sequences. (2) **Action** selection for attaining **sub-goals**. (3) Executing **actions** to get **sub-goal results**. (4) Evaluating **sub-goal results**. (5) Further selection of valuable **sub-goals**. Note that stages (2)(3)(4) are taken for all the decomposed sub-goals.*
 
 Large Language Models (LLMs) have shown prominent performance in various downstream tasks and prompt engineering plays a pivotal role in optimizing LLMs' performance. 
 This paper, not only as an overview of current prompt engineering methods, but also aims to highlight the limitation of designing prompts based on an anthropomorphic assumption that expects LLMs to think like humans. 
