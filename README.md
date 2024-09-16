@@ -1,8 +1,12 @@
 # Goal-oriented Prompt Engineering
 
+![Project Image](./Figures/overview.png)
+
+*Fig.1 An overview of the goal-oriented framework for prompting LLMs taking solving a math word problem as an example. (1) Decomposing **goal** into **sub-goal** sequences. (2) \textbf{Action} selection for attaining **sub-goals**. (3) Executing **actions** to get **sub-goal results**. (4) Evaluating **sub-goal results**. (5) Further selection of valuable **sub-goals**. Note that stages (2)(3)(4) are taken for all the decomposed sub-goals.*
+
 Large Language Models (LLMs) have shown prominent performance in various downstream tasks and prompt engineering plays a pivotal role in optimizing LLMs' performance. 
 This paper, not only as an overview of current prompt engineering methods, but also aims to highlight the limitation of designing prompts based on an anthropomorphic assumption that expects LLMs to think like humans. 
-From our review of 36 representative studies, we demonstrate that a goal-oriented prompt formulation, which guides LLMs to follow established human logical thinking, significantly improves the performance of LLMs. 
+From our review of 48 representative studies, we demonstrate that a goal-oriented prompt formulation, which guides LLMs to follow established human logical thinking, significantly improves the performance of LLMs. 
 Furthermore, We introduce a novel taxonomy that categorizes goal-oriented prompting methods into five interconnected stages and we demonstrate the broad applicability of our framework. 
 With four future directions proposed, we hope to further emphasize the power and potential of goal-oriented prompt engineering in all fields.  
 
@@ -66,6 +70,18 @@ Please feel free to send a pull request to add papers and relevant content that 
 - [Inner Monologue](https://arxiv.org/pdf/2207.05608.pdf)  - Inner monologue: Embodied reasoning through planning with language models
 - [LLM-Planner](https://arxiv.org/pdf/2212.04088.pdf)  - LLM-Planner: Few-shot grounded planning for embodied agents with large language models
 - [INTERVENOR](https://arxiv.org/pdf/2311.09868.pdf)  - INTERVENOR: Prompting the Coding Ability of Large Language Models with the Interactive Chain of Repair
+- [DOKE](https://arxiv.org/pdf/2311.10779) - Knowledge Plugins: Enhancing Large Language Models for Domain-Specific Recommendations
+- [InteRecAgent](https://arxiv.org/pdf/2308.16505) - Recommender AI Agent: Integrating Large Language Models for Interactive Recommendations
+- [Faithful CoT](https://arxiv.org/pdf/2301.13379) - Faithful Chain-of-Thought Reasoning
+- [RoT](https://arxiv.org/pdf/2306.06891) - Recursion of Thought: A Divide-and-Conquer Approach to Multi-Context Reasoning with Language Models
+- [MathPrompter](https://arxiv.org/pdf/2303.05398) - MathPrompter: Mathematical Reasoning using Large Language Models
+- [PAL](https://arxiv.org/pdf/2211.10435) - PAL: Program-aided Language Models
+- [LINC](https://aclanthology.org/2023.emnlp-main.313.pdf) - LINC: A Neurosymbolic Approach for Logical Reasoning by Combining Language Models with First-Order Logic Provers
+- [Logical-LM](https://arxiv.org/pdf/2305.12295) - Logic-LM: Empowering Large Language Models with Symbolic Solvers for Faithful Logical Reasoning
+- [REFINER](https://arxiv.org/pdf/2304.01904) - REFINER: Reasoning Feedback on Intermediate Representations
+- [CRITIC](https://arxiv.org/pdf/2305.11738) - CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing
+- [Verify-and-Edit](https://arxiv.org/pdf/2305.03268) - Verify-and-Edit: A Knowledge-Enhanced Chain-of-Thought Framework
+- [MAF](https://aclanthology.org/2023.emnlp-main.407.pdf) - MAF: Multi-Aspect Feedback for Improving Reasoning in Large Language Models
 
 ## Tasks
 
@@ -109,6 +125,7 @@ Please feel free to send a pull request to add papers and relevant content that 
 - [ProofWriter](https://arxiv.org/pdf/2012.13048v2.pdf) - ProofWriter: Generating Implications, Proofs, and Abductive Statements over Natural Language
 - [List Reversal](https://arxiv.org/pdf/2210.02406.pdf) - Decomposed prompting: A modular approach for solving complex tasks
 - [PrOntoQA](https://arxiv.org/pdf/2210.01240v4.pdf) - Language Models Are Greedy Reasoners: A Systematic Formal Analysis of Chain-of-Thought
+- [FOLIO](https://arxiv.org/pdf/2209.00840) - FOLIO: Natural Language Reasoning with First-Order Logic
 
 ### Planning
 - [VirtualHome](https://openaccess.thecvf.com/content_cvpr_2018/papers/Puig_VirtualHome_Simulating_Household_CVPR_2018_paper.pdf) - Virtualhome: Simulating household activities via programs
@@ -157,6 +174,7 @@ Please feel free to send a pull request to add papers and relevant content that 
 ### Recommendation
 - [WebShop](https://proceedings.neurips.cc/paper_files/paper/2022/file/82ad13ec01f9fe44c01cb91814fd7b8c-Paper-Conference.pdf) - Webshop: Towards scalable real-world web interaction with grounded language agents
 - [Amazon Reviews](https://aclanthology.org/D19-1018.pdf) - Justifying recommendations using distantly-labeled reviews and fine-grained aspects
+- [Yelp](https://arxiv.org/pdf/2203.13366) - Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5)
 
 ### Misc
 - [Compositional Generalization](https://arxiv.org/pdf/2205.10625.pdf) - Least-to-most prompting enables complex reasoning in large language models
