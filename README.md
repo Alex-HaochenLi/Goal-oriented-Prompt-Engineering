@@ -1,19 +1,23 @@
 # Goal-oriented Prompt Engineering
 
+This repository contains a curated list of papers and datasets that are devoted to research 
+on Goal-oriented Prompt Engineering. 
+
+For more details, please refer to our survey paper [Towards Goal-oriented Prompt Engineering for Large Language Models: A Survey](https://arxiv.org/pdf/2401.14043).
+
+Our list covers a wide range of applications, including Arithmetic Reasoning,
+Commonsense Reasoning, Symbolic Reasoning, Logical Reasoning, Planning in Virtual/Real Environment, Multihop Question Answering,
+Open-domain Question Answering, Code Generation, Dialogue, and Recommendation.
+
 ![Project Image](./Figures/overview.png)
 
 *Fig.1 An overview of the goal-oriented framework for prompting LLMs taking solving a math word problem as an example. (1) Decomposing **goal** into **sub-goal** sequences. (2) **Action** selection for attaining **sub-goals**. (3) Executing **actions** to get **sub-goal results**. (4) Evaluating **sub-goal results**. (5) Further selection of valuable **sub-goals**. Note that stages (2)(3)(4) are taken for all the decomposed sub-goals.*
 
 Large Language Models (LLMs) have shown prominent performance in various downstream tasks and prompt engineering plays a pivotal role in optimizing LLMs' performance. 
 This paper, not only as an overview of current prompt engineering methods, but also aims to highlight the limitation of designing prompts based on an anthropomorphic assumption that expects LLMs to think like humans. 
-From our review of 48 representative studies, we demonstrate that a goal-oriented prompt formulation, which guides LLMs to follow established human logical thinking, significantly improves the performance of LLMs. 
+From our review of 50 representative studies, we demonstrate that a goal-oriented prompt formulation, which guides LLMs to follow established human logical thinking, significantly improves the performance of LLMs. 
 Furthermore, We introduce a novel taxonomy that categorizes goal-oriented prompting methods into five interconnected stages and we demonstrate the broad applicability of our framework. 
-With four future directions proposed, we hope to further emphasize the power and potential of goal-oriented prompt engineering in all fields.  
-
-This repository contains a curated list of datasets that are devoted to research 
-on Goal-oriented Prompt Engineering. Our list covers a wide range of applications, including Arithmetic Reasoning,
-Commonsense Reasoning, Symbolic Reasoning, Logical Reasoning, Planning in Virtual/Real Environment, Multihop Question Answering,
-Open-domain Question Answering, Code Generation, Dialogue, and Recommendation.
+With four future directions proposed, we hope to further emphasize the power and potential of goal-oriented prompt engineering in all fields.
 
 Please feel free to send a pull request to add papers and relevant content that are not listed here.
 
@@ -82,6 +86,8 @@ Please feel free to send a pull request to add papers and relevant content that 
 - [CRITIC](https://arxiv.org/pdf/2305.11738) - CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing
 - [Verify-and-Edit](https://arxiv.org/pdf/2305.03268) - Verify-and-Edit: A Knowledge-Enhanced Chain-of-Thought Framework
 - [MAF](https://aclanthology.org/2023.emnlp-main.407.pdf) - MAF: Multi-Aspect Feedback for Improving Reasoning in Large Language Models
+- [Cue-CoT](https://aclanthology.org/2023.findings-emnlp.806.pdf) - Cue-CoT: Chain-of-thought Prompting for Responding to In-depth Dialogue Questions with LLMs
+- [SAFARI](https://aclanthology.org/2023.findings-emnlp.641.pdf) - Large Language Models as Source Planner for Personalized Knowledge-grounded Dialogues
 
 ## Tasks
 
@@ -187,3 +193,14 @@ Please feel free to send a pull request to add papers and relevant content that 
 - [Set Operations](https://arxiv.org/pdf/2308.09687.pdf) - Graph of thoughts: Solving elaborate problems with large language models
 - [Keyword Counting](https://arxiv.org/pdf/2308.09687.pdf) - Graph of thoughts: Solving elaborate problems with large language models
 - [Document Merging](https://arxiv.org/pdf/2308.09687.pdf) - Graph of thoughts: Solving elaborate problems with large language models
+
+## Citation
+If you found this repository useful, please consider citing:
+```bibtex
+@article{li2024towards,
+  title={Towards Goal-oriented Large Language Model Prompting: A Survey},
+  author={Li, Haochen and Leung, Jonathan and Shen, Zhiqi},
+  journal={arXiv preprint arXiv:2401.14043},
+  year={2024}
+}
+```
